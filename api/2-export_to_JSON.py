@@ -19,7 +19,7 @@ if __name__ == "__main__":
         for tasks in data.json():
             alltask[argv[1]].append(dict(
                 task=tasks['title'], completed=tasks['completed'],
-                username = employee_username))
+                username=employee_username))
 
         with open(argv[1] + '.json', 'w') as file:
             dump(alltask, file)
