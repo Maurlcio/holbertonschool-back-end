@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Extracts data about an employee from an API"""
+import json
 from requests import get
 from sys import argv
-import json
 
 if __name__ == "__main__":
     if argv[1].isdigit() is True:
